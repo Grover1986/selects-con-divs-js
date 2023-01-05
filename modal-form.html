@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/modal-form.css">
+    <title>Modal Selects - Grover</title>
+</head>
+<body>
+    
+    <div class="modal-location" id="modal-location">
+        <div class="modal-location__overlay"></div>
+        <div class="modal-location__content">
+            <div class="modal-location__img">
+               <img src="https://mercury.vteximg.com.br/arquivos/icono-location.png" width="120" height="121" alt="Ubicación">
+            </div>
+            <div class="modal-location__text">
+                <h3 class="modal-location__title">Ingresa una ubicación</h3>
+                <p class="modal-location__alert">Esta ubicación definirá la disponibilidad y costo del envío a domicilio de producto.</p>
+            </div>
+            <div class="modal-location__form">
+               <form class="modal-form">
+                    <div id="modal-form__dept" class="modal-form__box">
+                        <div class="modal-form__selectbox">
+                            <div class="modal-form__select" data-select="dpto">
+                                <div class="modal-form__content">
+                                    <span class="modal-form__placeholder">Seleccionar departamento</span>
+                                </div>
+                                <span class="arrow-down"></span>
+                            </div>
+                        </div>        
+                        <div class="modal-form__options" data-content="dpto">
+                            <ul class="modal-form__list" id="departament">
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div id="modal-form__prov" class="modal-form__box">
+                        <div class="modal-form__selectbox">
+                            <div class="modal-form__select disabled" data-select="prov">
+                                <div class="modal-form__content">
+                                </div>
+                                <span class="arrow-down"></span>
+                            </div>
+                        </div>                     
+                        <div class="modal-form__options" data-content="prov">
+                            <ul class="modal-form__list" id="province">
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div id="modal-form__dist" class="modal-form__box">
+                        <div class="modal-form__selectbox">
+                            <div class="modal-form__select disabled" data-select="dist">
+                                <div class="modal-form__content">
+                                </div>
+                                <span class="arrow-down"></span>
+                            </div>
+                        </div>                    
+                        <div class="modal-form__options" data-content="dist">
+                            <ul class="modal-form__list" id="district">
+                            </ul>
+                        </div>
+                    </div>       
+               </form>
+               
+               <div class="modal-location__btn">
+                    <button type="button" class="modal-location__save" disabled>Guardar</button>
+               </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/modal-form.js"></script>
+</body>
+</html>
